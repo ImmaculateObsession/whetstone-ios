@@ -76,7 +76,45 @@
                     <view key="view" contentMode="scaleToFill" id="l2h-1f-YSB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mLP-JQ-0kY">
+                                <rect key="frame" x="0.0" y="66" width="320" height="414"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IY-Tw-vYH">
+                                <rect key="frame" x="20" y="432" width="30" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-82-Hml">
+                                <rect key="frame" x="254" y="438" width="46" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="dwc-Ag-YKT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1IY-Tw-vYH" firstAttribute="bottom" secondItem="IK2-82-Hml" secondAttribute="bottom" id="84O-DW-vk1"/>
+                            <constraint firstItem="1IY-Tw-vYH" firstAttribute="leading" secondItem="l2h-1f-YSB" secondAttribute="leading" constant="20" symbolic="YES" id="CYf-gf-Ven"/>
+                            <constraint firstAttribute="trailing" secondItem="mLP-JQ-0kY" secondAttribute="trailing" id="DFm-5g-CDS"/>
+                            <constraint firstItem="mLP-JQ-0kY" firstAttribute="leading" secondItem="l2h-1f-YSB" secondAttribute="leading" id="Do7-mQ-wWS"/>
+                            <constraint firstAttribute="bottom" secondItem="1IY-Tw-vYH" secondAttribute="bottom" constant="20" symbolic="YES" id="QxT-dM-7tI"/>
+                            <constraint firstItem="mLP-JQ-0kY" firstAttribute="top" secondItem="vGl-wS-uTD" secondAttribute="bottom" constant="2" id="UlL-p8-7LU"/>
+                            <constraint firstAttribute="bottom" secondItem="mLP-JQ-0kY" secondAttribute="bottom" id="g5m-aC-jYQ"/>
+                            <constraint firstAttribute="trailing" secondItem="IK2-82-Hml" secondAttribute="trailing" constant="20" symbolic="YES" id="hUb-ox-XTl"/>
+                            <constraint firstItem="IK2-82-Hml" firstAttribute="top" secondItem="vGl-wS-uTD" secondAttribute="bottom" constant="374" id="lYp-ns-Ic1"/>
+                            <constraint firstItem="1IY-Tw-vYH" firstAttribute="top" secondItem="vGl-wS-uTD" secondAttribute="bottom" constant="368" id="vgr-dv-HKB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XeU-39-N1g"/>
                 </viewController>
