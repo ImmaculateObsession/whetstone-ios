@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Whetstone-->
+        <!--Setup View Controller - Whetstone-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Whetstone" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Whetstone" id="vXZ-lx-hvc" customClass="SetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GbG-Zl-wuJ"/>
                         <viewControllerLayoutGuide type="bottom" id="94k-JR-uDy"/>
@@ -56,10 +56,33 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Whetstone" id="5jl-on-yxE"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="w2f-Ip-PNo" id="1Ya-Wd-f6Q"/>
+                        <segue destination="e42-3e-Cgo" kind="push" identifier="PhotoCard" id="1l7-ER-AqZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="547" y="653"/>
+        </scene>
+        <!--Photo Card View Controller-->
+        <scene sceneID="6x9-SV-vN6">
+            <objects>
+                <viewController storyboardIdentifier="PhotoCard" id="e42-3e-Cgo" customClass="PhotoCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vGl-wS-uTD"/>
+                        <viewControllerLayoutGuide type="bottom" id="jZB-zI-9k8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l2h-1f-YSB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XeU-39-N1g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyT-Lc-4e3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="653"/>
         </scene>
         <!--Navigation Controller - Whetstone-->
         <scene sceneID="TQN-hT-gbf">
