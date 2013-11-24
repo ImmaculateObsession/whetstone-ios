@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		697F4CD718427EFC00FEF6D5 /* PhotoCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F4CD618427EFC00FEF6D5 /* PhotoCardViewController.m */; };
+		697F4CDA1842827300FEF6D5 /* female_face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 697F4CD91842827300FEF6D5 /* female_face.jpg */; };
 		6993058F18416041000F1A9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6993058E18416041000F1A9A /* Foundation.framework */; };
 		6993059118416041000F1A9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6993059018416041000F1A9A /* CoreGraphics.framework */; };
 		6993059318416041000F1A9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6993059218416041000F1A9A /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		697F4CD518427EFC00FEF6D5 /* PhotoCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCardViewController.h; sourceTree = "<group>"; };
 		697F4CD618427EFC00FEF6D5 /* PhotoCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCardViewController.m; sourceTree = "<group>"; };
+		697F4CD91842827300FEF6D5 /* female_face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = female_face.jpg; sourceTree = "<group>"; };
 		6993058B18416041000F1A9A /* Whetstone-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whetstone-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6993058E18416041000F1A9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6993059018416041000F1A9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		697F4CD81842826700FEF6D5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				697F4CD91842827300FEF6D5 /* female_face.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		6993058218416041000F1A9A = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		6993059418416041000F1A9A /* Whetstone-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				697F4CD81842826700FEF6D5 /* Assets */,
 				6993059D18416041000F1A9A /* AppDelegate.h */,
 				6993059E18416041000F1A9A /* AppDelegate.m */,
 				699305A018416041000F1A9A /* Main.storyboard */,
@@ -243,6 +254,7 @@
 			files = (
 				699305A718416041000F1A9A /* Images.xcassets in Resources */,
 				6993059918416041000F1A9A /* InfoPlist.strings in Resources */,
+				697F4CDA1842827300FEF6D5 /* female_face.jpg in Resources */,
 				699305A218416041000F1A9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
