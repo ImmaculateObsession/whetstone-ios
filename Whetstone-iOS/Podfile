@@ -1,0 +1,2 @@
+platform :ios, '6.1'
+pod 'FlickrKit',    '~> 1.0.2'
