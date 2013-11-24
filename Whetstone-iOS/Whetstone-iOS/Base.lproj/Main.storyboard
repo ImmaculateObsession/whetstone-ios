@@ -8,7 +8,6 @@
         <!--View Controller - Whetstone-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <viewController title="Whetstone" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GbG-Zl-wuJ"/>
@@ -18,34 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2f-Ip-PNo">
-                                <rect key="frame" x="82" y="147" width="157" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2f-Ip-PNo">
+                                <rect key="frame" x="82" y="109" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search term" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNi-oG-p4a">
-                                <rect key="frame" x="113" y="185" width="94" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search term" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNi-oG-p4a">
+                                <rect key="frame" x="113" y="147" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-ZB-WWc">
-                                <rect key="frame" x="80" y="223" width="161" height="34"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-ZB-WWc">
+                                <rect key="frame" x="80" y="185" width="160" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-5F-Igj">
-                                <rect key="frame" x="127" y="264" width="66" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-5F-Igj">
+                                <rect key="frame" x="127" y="226" width="66" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yNi-oG-p4a" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3VB-Fc-zXk"/>
+                            <constraint firstItem="w2f-Ip-PNo" firstAttribute="centerX" secondItem="yNi-oG-p4a" secondAttribute="centerX" id="8RU-g2-czD"/>
+                            <constraint firstItem="sjh-ZB-WWc" firstAttribute="leading" secondItem="w2f-Ip-PNo" secondAttribute="leading" id="Hyl-P6-Bzo"/>
+                            <constraint firstItem="sjh-ZB-WWc" firstAttribute="centerX" secondItem="zNk-5F-Igj" secondAttribute="centerX" id="NbU-2h-nVa"/>
+                            <constraint firstItem="yNi-oG-p4a" firstAttribute="top" secondItem="w2f-Ip-PNo" secondAttribute="bottom" constant="8" symbolic="YES" id="TGq-a9-SUl"/>
+                            <constraint firstItem="w2f-Ip-PNo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="82" id="f5b-Pn-Lil"/>
+                            <constraint firstItem="w2f-Ip-PNo" firstAttribute="top" secondItem="GbG-Zl-wuJ" secondAttribute="bottom" constant="45" id="fJ8-Ye-uwH"/>
+                            <constraint firstItem="sjh-ZB-WWc" firstAttribute="trailing" secondItem="w2f-Ip-PNo" secondAttribute="trailing" id="h84-U5-pMd"/>
+                            <constraint firstItem="zNk-5F-Igj" firstAttribute="top" secondItem="sjh-ZB-WWc" secondAttribute="bottom" constant="8" symbolic="YES" id="oUw-jL-Nhi"/>
+                            <constraint firstItem="sjh-ZB-WWc" firstAttribute="top" secondItem="yNi-oG-p4a" secondAttribute="bottom" constant="17" id="scP-ax-HVa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Whetstone" id="5jl-on-yxE"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="547" y="653"/>
         </scene>
