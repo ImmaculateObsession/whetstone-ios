@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PhotoCardViewController : UIViewController
-
+@property (nonatomic) float duration;
 @end
