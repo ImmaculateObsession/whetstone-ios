@@ -24,19 +24,14 @@
     [super viewDidLoad];
     self.searchTextField.delegate = self;
 	// Do any additional setup after loading the view, typically from a nib.
+    UIBarButtonItem *startWithSearchButton = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleDone target:self action:@selector(saveSettings)];
+    [self.navigationItem setRightBarButtonItem:startWithSearchButton animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    UIBarButtonItem *startWithSearchButton = [[UIBarButtonItem alloc] initWithTitle:@"Start" style:UIBarButtonItemStyleDone target:self action:@selector(saveSettings)];
-    [self.navigationItem setRightBarButtonItem:startWithSearchButton animated:YES];
-
-    return YES;
 }
 
 - (void)saveSettings {

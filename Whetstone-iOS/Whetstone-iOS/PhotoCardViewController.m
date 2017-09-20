@@ -33,8 +33,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    UIBarButtonItem *backBarButton = [[UIBarButtonItem alloc] init];
+    backBarButton.title = @"Setup";
+    self.navigationItem.backBarButtonItem.title = @"Setup";
     self.imageName = @"female_face.jpg";
-    self.timePassed = 0;
+    self.timePassed = self.duration;
     [self startRepeatingTimer];
     [self startImageTimer];
 }
@@ -46,10 +49,10 @@
 }
 
 - (void)updateTimeLabel {
-    if (self.timePassed >= self.duration) {
-        self.timePassed = 0;
+    if (self.timePassed <= 0) {
+        self.timePassed = self.duration;
     }
-    self.timePassed = self.timePassed + 1;
+    self.timePassed = self.timePassed - 1;
     self.timeLabel.text = [NSString stringWithFormat:@"%0.0f", self.timePassed];
 }
 
